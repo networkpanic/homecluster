@@ -28,8 +28,8 @@ spec:
   values:
     replicaCount: 1
     nfs:
-      path: ${NFS_PATH}
-      server: ${NFS_SERVER}
+      path: $NFS_PATH
+      server: $NFS_SERVER
       mountOptions:
         - noatime
     storageClass:
