@@ -28,13 +28,12 @@ spec:
   values:
     replicaCount: 1
     nfs:
-      path: "192.168.2.5"
-      server: "/volume1/k8s-csi-prod"
+      path: "${NFS_PATH}"
+      server: "${NFS_SERVER}"
       mountOptions:
         - noatime
     storageClass:
       defaultClass: false
-      pathPattern: "${.PVC.namespace}-${.PVC.name}"
     affinity:
       podAntiAffinity:
         preferredDuringSchedulingIgnoredDuringExecution:
