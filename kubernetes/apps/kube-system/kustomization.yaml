@@ -6,5 +6,5 @@ resources:
   - ./local-path-provisioner/ks.yaml
   - ./metrics-server/ks.yaml
   - ./namespace.yaml
-#  - ./nfs-subdir-external-provisioner/ks.yaml
+  - ./nfs-subdir-external-provisioner/ks.yaml
   - ./reloader/ks.yaml
