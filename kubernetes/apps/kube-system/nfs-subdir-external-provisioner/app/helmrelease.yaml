@@ -28,8 +28,8 @@ spec:
   values:
     replicaCount: 1
     nfs:
-      path: "${NFS_PATH}"
-      server: "${NFS_SERVER}"
+      path: "192.168.2.5"
+      server: "/volume1/k8s-csi-prod"
       mountOptions:
         - noatime
     storageClass:
